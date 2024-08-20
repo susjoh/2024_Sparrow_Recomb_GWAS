@@ -12,4 +12,4 @@ The responsibility of curating the code and data is the responsibility of [Susan
 
 The associated raw data is archived on Dryad [here](). Note - to run these scripts, make sure to check within scripts for the appropriate directory structure for reading and writing files.
 
-The first script to be run is `yapp_70k.sh` to generate the base data. Subsequent scripts are then run in their numerical order above.
+The first script to be run is `0_Create_YAPP_files.sh` followed by `yapp_70k.sh` to generate the base data. Subsequent scripts are then run in their numerical order above (1, 2, 3, etc.).
