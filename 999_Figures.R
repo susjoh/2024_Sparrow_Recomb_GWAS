@@ -48,6 +48,7 @@ ggplot(recsumm, aes(y = sex2, x = yapp_CO_count_no_micro, fill = sex2)) +
   theme(legend.position = "none") +
   labs(y = "Sex", x = "Autosomal Crossover Count (ACC)")
 ggsave("figs/999_Sex_Diff_ACC_density.png", width = 4, height = 4)
+ggsave("figs/999_Sex_Diff_ACC_density.pdf", width = 4, height = 4)
 
 
 ggplot(recsumm, aes(y = sex2, x = intra_shuff_no_micro, fill = sex2)) +
