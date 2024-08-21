@@ -8,8 +8,8 @@ This is a code repository for the article: **The genetic architecture of recombi
 
 This article is in press in Molecular Biology and Evolution, and a preprint is available on [BioRxiv](https://www.biorxiv.org/content/10.1101/2023.01.26.525019v3)
 
-The responsibility of curating the code and data is the responsibility of [Susan Johnston](Susan.Johnston@ed.ac.uk). Any questions or queries should be directed to her.
-
 The associated raw data is archived on Dryad [here](). Note - to run these scripts, make sure to check within scripts for the appropriate directory structure for reading and writing files.
 
-The first script to be run is `0_Create_YAPP_files.sh` followed by `yapp_70k.sh` to generate the base data. Subsequent scripts are then run in their numerical order above (1, 2, 3, etc.).
+The first script to be run is `0_Create_YAPP_files.sh` followed by `yapp_70k.sh` to generate the base data. Subsequent R scripts are then run in their numerical order above (1, 2, 3, etc.).
+
+The responsibility of curating the code and data is the responsibility of [Susan Johnston](Susan.Johnston@ed.ac.uk). Any questions or queries should be directed to her.

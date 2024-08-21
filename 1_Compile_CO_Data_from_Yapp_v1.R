@@ -12,12 +12,12 @@ library(tidyr)
 library(kinship2)
 
 
-load("prev_data/1_Cleaned_Sparrow_Yapp_Data.RData", verbose = T)
-recchr_old <- recchr
-recsumm_old <- recsumm
-rectab_old <- rectab
-
-rm(recchr, rectab, recsumm, ped, linkmap)
+# load("prev_data/1_Cleaned_Sparrow_Yapp_Data.RData", verbose = T)
+# recchr_old <- recchr
+# recsumm_old <- recsumm
+# rectab_old <- rectab
+# 
+# rm(recchr, rectab, recsumm, ped, linkmap)
 
 #~~ Make a vector of recombinations files
 

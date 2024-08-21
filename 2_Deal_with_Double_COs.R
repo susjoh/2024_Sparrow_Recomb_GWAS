@@ -351,9 +351,9 @@ recchr_v2 <- recchr
 
 recsumm <- data.frame(recsumm)
 
-ggplot(recsumm, aes(yapp_CO_count_old, yapp_CO_count_QCed)) + geom_point(alpha = 0.2)
-
-cor.test(recsumm$yapp_CO_count_old, recsumm$yapp_CO_count_QCed)
+# ggplot(recsumm, aes(yapp_CO_count_old, yapp_CO_count_QCed)) + geom_point(alpha = 0.2)
+# 
+# cor.test(recsumm$yapp_CO_count_old, recsumm$yapp_CO_count_QCed)
 
 recchr_v2$chrom <- as.numeric(as.character(recchr_v2$chrom))
 recchr_v2$n <- as.numeric(as.character(recchr_v2$n))

@@ -11,12 +11,12 @@ library(tidyr)
 library(kinship2)
 
 
-load("prev_data/1_Cleaned_Sparrow_Yapp_Data.RData", verbose = T)
-recchr_old <- recchr
-recsumm_old <- recsumm
-rectab_old <- rectab
-
-rm(recchr, rectab, recsumm, ped, linkmap)
+# load("prev_data/1_Cleaned_Sparrow_Yapp_Data.RData", verbose = T)
+# recchr_old <- recchr
+# recsumm_old <- recsumm
+# rectab_old <- rectab
+# 
+# rm(recchr, rectab, recsumm, ped, linkmap)
 
 #~~ Make a vector of recombinations files
 
@@ -287,9 +287,9 @@ recsumm <- left_join(recsumm, fullped)
 
 #~~ Add the old recsumm as a sanity check:
 
-x <- subset(recsumm_old, select = c(meiosis, yapp_CO_count))
-names(x)[2] <- "yapp_CO_count_old"
-recsumm <- left_join(recsumm, x)
+# x <- subset(recsumm_old, select = c(meiosis, yapp_CO_count))
+# names(x)[2] <- "yapp_CO_count_old"
+# recsumm <- left_join(recsumm, x)
 
 #~~ add parent count
 
@@ -313,13 +313,13 @@ ggplot(recsumm, aes(yapp_CO_no_micro)) + geom_histogram(binwidth = 1)
 # 5. Check associations with different factors #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-#~~ Does it match with the old yapp CO count?
-
-ggplot(recsumm, aes(yapp_CO_count, yapp_CO_count_old)) +
-  geom_point(alpha = 0.1) +
-  stat_smooth(method = "lm")
-
-cor.test(recsumm$yapp_CO_count, recsumm$yapp_CO_count_old)
+# #~~ Does it match with the old yapp CO count?
+# 
+# ggplot(recsumm, aes(yapp_CO_count, yapp_CO_count_old)) +
+#   geom_point(alpha = 0.1) +
+#   stat_smooth(method = "lm")
+# 
+# cor.test(recsumm$yapp_CO_count, recsumm$yapp_CO_count_old)
 
 #~~ More COs are present when heterozygosity is higher...
 
